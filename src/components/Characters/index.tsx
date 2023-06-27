@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useContext, useEffect, useRef } from "react";
+import { MutableRefObject, useContext, useEffect, useRef } from "react";
 
 import { CharactersContext } from "../../Context/CharactersContext";
 import { CharacterData } from "../../interfaces";

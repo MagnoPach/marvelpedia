@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import { useEffect, useContext, useState } from "react";
 
 import { CharactersContext } from "../../Context/CharactersContext";
 import { CharacterProps } from "../../interfaces";

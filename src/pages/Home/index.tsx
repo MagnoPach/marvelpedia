@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import md5 from "md5";
+import { useContext } from "react";
 
 import Main from "../../components/Main";
 import CharacterData from "../../popups/CharacterData";
