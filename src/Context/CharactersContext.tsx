@@ -30,7 +30,7 @@ export const CharactersProvider = ({ children }: ChildrenProps) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [loadMore, setLoadMore] = useState<boolean>(false);
 
-  const BASE_URL = `http://gateway.marvel.com/v1/public/characters?`;
+  const BASE_URL = `https://gateway.marvel.com/v1/public/characters?`;
 
   const publicKey = "e6ae3755342b8470e95d32d58fa5ea35";
   const privateKey = "06d75477edaaa72cf9d33a68fb178e3714e2a1c3";
