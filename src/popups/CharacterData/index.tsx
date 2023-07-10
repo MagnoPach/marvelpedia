@@ -10,11 +10,14 @@ export default function CharacterData() {
     selectedCharacterIndex,
     filteredCharacters,
     setSelectedCharacterIndex,
+    searchedCharacter,
   } = useContext(CharactersContext);
 
   const currentIndex = selectedCharacterIndex;
   const filteredCharactersLength = filteredCharacters.length;
-  const character = characters[selectedCharacterIndex];
+  const validCharacters =
+    searchedCharacter.length === 0 ? characters : filteredCharacters;
+  const character = validCharacters[selectedCharacterIndex];
   const comics = character["comics"]["items"];
   const stories = character["stories"]["items"];
   const portraitsUrl = `${character["thumbnail"]["path"]}.${character["thumbnail"]["extension"]}`;
